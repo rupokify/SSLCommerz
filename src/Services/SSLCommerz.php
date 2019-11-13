@@ -6,6 +6,6 @@ class SSLCommerz
 {
     public function dump()
     {
-        dd('dumping shopping cart');
+        dd('Hello SSLCommerz Payment');
     }
 }

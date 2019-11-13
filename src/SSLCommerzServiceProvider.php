@@ -14,6 +14,16 @@ class SSLCommerzServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        $this->registerSSLCommerz();
+    }
+
+    /**
+     * Register SSLCommerz.
+     *
+     * @return void
+     */
+    protected function registerSSLCommerz()
+    {
         $this->app->bind('sslcommerz', function () {
             return new SSLCommerz();
         });
@@ -26,6 +36,33 @@ class SSLCommerzServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $this->bootSSLCommerz();
+    }
+
+    /**
+     * Bootstrap SSLCommerz.
+     *
+     * @return void
+     */
+    protected function bootSSLCommerz()
+    {
+        $this->publishes([
+            __DIR__.'/config/sslcommerz.php' => config_path('sslcommerz.php'),
+        ]);
+        $this->mergeConfigFrom(
+            __DIR__.'/config/sslcommerz.php', 'sslcommerz'
+        );
+    }
+
+    /**
+     * Get the service provided by the provider.
+     *
+     * @return string[]
+     */
+    public function provides()
+    {
+        return [
+            'sslcommerz'
+        ];
     }
 }
