@@ -1,0 +1,15 @@
+{
+    "name": "rupokify/sslcommerz",
+    "description": "Laravel Library for SSLCommerz Payment Gateway API",
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "^6.4"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rupok Chowdhury Protik",
+            "email": "rupokify@gmail.com"
+        }
+    ]
+}
