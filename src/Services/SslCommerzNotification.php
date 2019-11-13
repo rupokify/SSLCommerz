@@ -1,8 +1,7 @@
 <?php
+namespace App\Library\SslCommerz;
 
-namespace Rupokify\SSLCommerz\Services;
-
-class SSLCommerz extends AbstractSSLCommerz
+class SslCommerzNotification extends AbstractSslCommerz
 {
     protected $data = [];
     protected $config = [];

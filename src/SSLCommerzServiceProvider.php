@@ -53,7 +53,10 @@ class SSLCommerzServiceProvider extends ServiceProvider
             __DIR__.'/config/sslcommerz.php', 'sslcommerz'
         );
         $this->loadViewsFrom(
-            __DIR__.'/views', 'sslcommerz'
+            __DIR__.'/resources/views', 'sslcommerz'
+        );
+        $this->loadRoutesFrom(
+            __DIR__.'/routes/sslcommerzroutes.php'
         );
     }
 
