@@ -11,5 +11,20 @@
             "name": "Rupok Chowdhury Protik",
             "email": "rupokify@gmail.com"
         }
-    ]
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rupokify\\SSLCommerz\\SSLCommerzServiceProvider"
+            ],
+            "aliases": {
+                "SSLCommerz": "Rupokify\\SSLCommerz\\Facades\\SSLCommerzFacade"
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Rupokify\\SSLCommerz\\": "packages/rupokify/sslcommerz/src"
+        }
+    }
 }

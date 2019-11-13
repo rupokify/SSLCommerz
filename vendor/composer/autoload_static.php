@@ -14,6 +14,10 @@ class ComposerStaticInit039788986e1a06cc53c5667da2c3e3cc
     );
 
     public static $prefixLengthsPsr4 = array (
+        'R' => 
+        array (
+            'Rupokify\\SSLCommerz\\' => 20,
+        ),
         'P' => 
         array (
             'Psr\\Http\\Message\\' => 17,
@@ -27,6 +31,10 @@ class ComposerStaticInit039788986e1a06cc53c5667da2c3e3cc
     );
 
     public static $prefixDirsPsr4 = array (
+        'Rupokify\\SSLCommerz\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/packages/rupokify/sslcommerz/src',
+        ),
         'Psr\\Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',
