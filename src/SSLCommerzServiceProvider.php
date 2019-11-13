@@ -52,6 +52,9 @@ class SSLCommerzServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(
             __DIR__.'/config/sslcommerz.php', 'sslcommerz'
         );
+        $this->loadViewsFrom(
+            __DIR__.'/views', 'sslcommerz'
+        );
     }
 
     /**

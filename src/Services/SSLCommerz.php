@@ -6,6 +6,6 @@ class SSLCommerz
 {
     public function dump()
     {
-        dd('Hello SSLCommerz Payment');
+        dd('Hello SSLCommerz');
     }
 }
