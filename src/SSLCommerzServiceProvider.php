@@ -58,6 +58,7 @@ class SSLCommerzServiceProvider extends ServiceProvider
         $this->loadRoutesFrom(
             __DIR__.'/routes/sslcommerzroutes.php'
         );
+        $this->app['router']->middleware('web', 'Rupokify\SSLCommerz\Http\Middleware\VerifyCsrfToken::class');
     }
 
     /**
