@@ -24,7 +24,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Rupokify\\SSLCommerz\\": "packages/rupokify/sslcommerz/src"
+            "Rupokify\\SSLCommerz\\": "src/"
         }
     }
 }

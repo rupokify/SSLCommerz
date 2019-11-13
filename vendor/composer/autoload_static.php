@@ -33,7 +33,7 @@ class ComposerStaticInit039788986e1a06cc53c5667da2c3e3cc
     public static $prefixDirsPsr4 = array (
         'Rupokify\\SSLCommerz\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/packages/rupokify/sslcommerz/src',
+            0 => __DIR__ . '/../..' . '/src',
         ),
         'Psr\\Http\\Message\\' => 
         array (
