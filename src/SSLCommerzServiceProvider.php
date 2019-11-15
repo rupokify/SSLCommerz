@@ -48,12 +48,10 @@ class SSLCommerzServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__.'/config/sslcommerz.php' => config_path('sslcommerz.php'),
+            __DIR__.'/resources/views' => $this->app->resourcePath('views/vendor/rupokify/sslcommerz')
         ]);
         $this->mergeConfigFrom(
             __DIR__.'/config/sslcommerz.php', 'sslcommerz'
-        );
-        $this->loadViewsFrom(
-            __DIR__.'/resources/views', 'sslcommerz'
         );
         $this->loadRoutesFrom(
             __DIR__.'/routes/sslcommerzroutes.php'

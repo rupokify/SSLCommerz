@@ -12,12 +12,12 @@ class SSLCommerzPaymentController extends Controller
 
     public function exampleEasyCheckout()
     {
-        return view('exampleEasycheckout');
+        return view('vendor.rupokify.sslcommerz.exampleEasycheckout');
     }
 
     public function exampleHostedCheckout()
     {
-        return view('exampleHosted');
+        return view('vendor.rupokify.sslcommerz.exampleHosted');
     }
 
     public function index(Request $request)
