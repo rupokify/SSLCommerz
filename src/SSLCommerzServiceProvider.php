@@ -47,9 +47,9 @@ class SSLCommerzServiceProvider extends ServiceProvider
     protected function bootSSLCommerz()
     {
         $this->publishes([
-            __DIR__.'/config/sslcommerz.php' => config_path('sslcommerz.php'),
+            __DIR__.'/config/sslcommerz.php' => configPath('sslcommerz.php'),
             __DIR__.'/resources/views' => $this->app->resourcePath('views/vendor/rupokify/sslcommerz'),
-            __DIR__.'/database/migrations' => $this->app->databasePath().'/migrations'
+            __DIR__.'/database/migrations' => $this->app->databasePath('/migrations')
         ]);
         $this->mergeConfigFrom(
             __DIR__.'/config/sslcommerz.php', 'sslcommerz'
