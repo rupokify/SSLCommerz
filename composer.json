@@ -5,6 +5,7 @@
     "require": {
         "guzzlehttp/guzzle": "^6.4"
     },
+    "minimum-stability": "dev",
     "license": "MIT",
     "authors": [
         {
