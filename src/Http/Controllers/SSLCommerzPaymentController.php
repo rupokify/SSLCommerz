@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Rupokify\SSLCommerz\Services\SSLCommerz;
+use Rupokify\SSLCommerz\Events\SSLCommerzPaymentComplete;
 
 class SSLCommerzPaymentController extends Controller
 {
@@ -209,6 +210,11 @@ class SSLCommerzPaymentController extends Controller
             echo "Invalid Transaction";
         }
 
+        $paymentdata = DB::table('payments')
+                ->where('transaction_id', $tran_id)
+                ->first();
+
+        event(new SSLCommerzPaymentComplete($paymentdata));
 
     }
 
@@ -231,6 +237,12 @@ class SSLCommerzPaymentController extends Controller
             echo "Transaction is Invalid";
         }
 
+        $paymentdata = DB::table('payments')
+                ->where('transaction_id', $tran_id)
+                ->first();
+
+        event(new SSLCommerzPaymentComplete($paymentdata));
+
     }
 
     public function cancel(Request $request)
@@ -252,6 +264,11 @@ class SSLCommerzPaymentController extends Controller
             echo "Transaction is Invalid";
         }
 
+        $paymentdata = DB::table('payments')
+                ->where('transaction_id', $tran_id)
+                ->first();
+
+        event(new SSLCommerzPaymentComplete($paymentdata));
 
     }
 
