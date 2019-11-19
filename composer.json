@@ -1,6 +1,6 @@
 {
     "name": "rupokify/sslcommerz",
-    "description": "Laravel Library for SSLCommerz Payment Gateway API",
+    "description": "Laravel Package for SSLCommerz Payment Gateway API",
     "type": "library",
     "require": {
         "php": ">=7.1.3",
