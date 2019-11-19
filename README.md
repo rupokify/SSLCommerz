@@ -1,2 +1,2 @@
 # Rupokify/SSLCommerz
-Laravel Library for SSLCommerz Payment Gateway API
+Laravel Package for SSLCommerz Payment Gateway API
