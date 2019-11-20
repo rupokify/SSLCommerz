@@ -12,7 +12,7 @@ php artisan vendor:publish
 php artisan migrate
 ```
 
-If you are using below Laravel 5.5 , you will need to edit **config/app.php** and add the following line in the providers section.
+I haven't tested it below Laravel 5.5 . If you wanna try in below Laravel 5.5 , you will need to edit **config/app.php** and add the following line in the providers section.
 
 ```php
 Rupokify\SSLCommerz\SSLCommerzServiceProvider::class
